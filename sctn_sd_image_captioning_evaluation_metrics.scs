@@ -1,0 +1,354 @@
+section_Subject_domain_of_image_captioning_evaluation_metrics=[*
+
+Subject_domain_of_image_captioning_evaluation_metrics
+=> nrel_main_idtf:
+	[Subject domain of image captioning evaluation metrics]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric
+=> nrel_main_idtf:
+	[image captioning evaluation metric]
+	(* <- lang_en;; *);;
+
+Subject_domain_of_image_captioning_evaluation_metrics 
+<- subject_domain;
+-> rrel_maximum_studied_object_class:
+	image_captioning_evaluation_metric;;
+
+metric_using_cosine_distance
+=> nrel_main_idtf:
+	[metric using cosine distance]
+	(* <- lang_en;; *);;
+
+metric_using_earth_movers_distance
+=> nrel_main_idtf:
+	[metric using earth mover’s distance]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric 
+<= nrel_inclusion:
+	relation;; 
+
+metric_using_cosine_distance 
+<= nrel_inclusion: 
+	image_captioning_evaluation_metric;;
+
+metric_using_earth_movers_distance 
+<= nrel_inclusion:
+	image_captioning_evaluation_metric;;
+
+metric_for_pair_of_sentences_comparison
+=> nrel_main_idtf:
+	[metric for pair of sentences comparison]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : {metric_for_comparison_of_sentence_with_several_references;metric_for_pair_of_sentences_comparison};;
+
+metric_without_penalties_or_awards
+=> nrel_main_idtf:
+	[metric without penalties or awards]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : { metric_with_penalties_or_awards ; metric_without_penalties_or_awards };;
+
+metric_with_correction_based_on_penalties_or_awards
+=> nrel_main_idtf:
+	[metric with correction based on penalties or awards]
+	(* <- lang_en;; *);;
+
+
+metric_with_correction_based_on_penalties_or_awards <=> nrel_equivalence : metric_with_penalties_or_awards ;;
+
+metric_considering_original_words
+=> nrel_main_idtf:
+	[metric considering original words]
+	(* <- lang_en;; *);;
+
+metric_considering_wordforms
+=> nrel_main_idtf:
+	[metric considering wordforms]
+	(* <- lang_en;; *);;
+
+metric_considering_synonyms
+=> nrel_main_idtf:
+	[metric considering synonyms]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : { metric_considering_original_words ; metric_considering_wordforms; metric_considering_synonyms };;
+
+
+metric_for_whole_summaries_comparison
+=> nrel_main_idtf:
+	[metric for whole summaries comparison]
+	(* <- lang_en;; *);;
+
+metric_for_summaries_parts_comparison
+=> nrel_main_idtf:
+	[metric for summaries parts comparison]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : { metric_for_whole_summaries_comparison ; metric_for_summaries_parts_comparison  };;
+
+metric_using_summaries_structuring_for_comparison
+=> nrel_main_idtf:
+	[metric using summaries structuring for comparison]
+	(* <- lang_en;; *);;
+
+metric_using_summaries_structuring_for_comparison <=nrel_inclusion: metric_for_summaries_parts_comparison ;;
+
+language_independent_metric
+=> nrel_main_idtf:
+	[language independent metric]
+	(* <- lang_en;; *);;
+
+language_dependent_metric
+=> nrel_main_idtf:
+	[language dependent metric]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : { language_independent_metric ; language_dependent_metric  };;
+
+fusional_languages_metric
+=> nrel_main_idtf:
+	[fusional languages metric]
+	(* <- lang_en;; *);;
+
+Russian_language_metric
+=> nrel_main_idtf:
+	[Russian language metric]
+	(* <- lang_en;; *);;
+
+isolating_languages_metric
+=> nrel_main_idtf:
+	[isolating languages metric]
+	(* <- lang_en;; *);;
+
+Chinese_language_metric
+=> nrel_main_idtf:
+	[Chinese language metric]
+	(* <- lang_en;; *);;
+
+agglutinative_languages_metric
+=> nrel_main_idtf:
+	[agglutinative languages metric]
+	(* <- lang_en;; *);;
+
+fusional_languages_metric <=nrel_inclusion: language_dependent_metric;;
+English_language_metric <=nrel_inclusion: fusional_languages_metric ;;
+Russian_language_metric <=nrel_inclusion: fusional_languages_metric ;;
+isolating_languages_metric <=nrel_inclusion: language_dependent_metric;;
+Chinese_language_metric <=nrel_inclusion: isolating_languages_metric  ;;
+agglutinative_languages_metric <=nrel_inclusion: language_dependent_metric;;
+
+
+metric_with_gaming
+=> nrel_main_idtf:
+	[metric with gaming]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : { metric_with_gaming ; metric_with_use_of_surprisal  };;
+
+domain_dependent_metric
+=> nrel_main_idtf:
+	[domain-dependent metric]
+	(* <- lang_en;; *);;
+
+domain_independent_metric
+=> nrel_main_idtf:
+	[domain-independent metric]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : { domain_dependent_metric ; domainin_dependent_metric  };;
+
+metric_with_limited_language_corpus
+=> nrel_main_idtf:
+	[metric with limited language corpus]
+	(* <- lang_en;; *);;
+
+domain_dependent_metric <=> nrel_equivalence : metric_with_limited_language_corpus ;;
+
+metric_with_opened_language_corpus
+=> nrel_main_idtf:
+	[metric with opened language corpus]
+	(* <- lang_en;; *);;
+
+domain_independent_metric <=> nrel_equivalence : metric_with_opened_language_corpus ;;
+
+metric_with_syntactic_comparison
+=> nrel_main_idtf:
+	[metric with syntactic comparison]
+	(* <- lang_en;; *);;
+
+metric_with_words_comparison
+=> nrel_main_idtf:
+	[metric with words comparison]
+	(* <- lang_en;; *);;
+
+metric_with_n_grams_using
+=> nrel_main_idtf:
+	[metric with n-grams using]
+	(* <- lang_en;; *);;
+
+image_captioning_evaluation_metric <= nrel_subdividing : { metric_with_syntactic_comparison ;metric_with_semantic_comparison ; metric_with_syntactic_and_semantic_comparison };;
+
+metric_with_words_comparison <=nrel_inclusion: metric_with_syntactic_comparison;;
+metric_with_n_grams_using <=nrel_inclusion: metric_with_words_comparison;;
+
+metric_considering_words_sequence
+=> nrel_main_idtf:
+	[metric considering words sequence]
+	(* <- lang_en;; *);;
+
+metric_not_considering_words_sequence
+=> nrel_main_idtf:
+	[metric not considering words sequence]
+	(* <- lang_en;; *);;
+
+metric_with_n_grams_using <= nrel_subdividing : { metric_considering_words_sequence ; metric_not_considering_words_sequence };;
+
+metric_with_arbitrary_words_sequence
+=> nrel_main_idtf:
+	[metric with arbitrary words sequence]
+	(* <- lang_en;; *);;
+
+metric_with_syntactic_and_semantic_comparison
+=> nrel_main_idtf:
+	[metric with syntactic and semantic comparison]
+	(* <- lang_en;; *);;
+
+metric_considering_words_sequence <=> nrel_equivalence :  metric_with_arbitrary_words_sequence;;
+metric_not_considering_words_sequence<=> nrel_equivalence :metric_with_fixed_words_sequence;;
+metric_with_semantic_comparison<=nrel_inclusion:metric_with_graph_comparison;;
+
+n_gram
+=> nrel_main_idtf:
+	[n-gram]
+	(* <- lang_en;; *);;
+
+unigram
+=> nrel_main_idtf:
+	[unigram]
+	(* <- lang_en;; *);;
+
+bigram
+=> nrel_main_idtf:
+	[bigram]
+	(* <- lang_en;; *);;
+
+unigram <=nrel_inclusion: n_gram;;
+bigram <=nrel_inclusion: n_gram;;
+
+
+SPICE
+=> nrel_main_idtf:
+	[SPICE]
+	(* <- lang_en;; *);;
+
+metric_with_graph_comparison
+=> nrel_main_idtf:
+	[metric with graph comparison]
+	(* <- lang_en;; *);;
+
+metric_with_use_of_surprisal
+=> nrel_main_idtf:
+	[metric with use of surprisal]
+	(* <- lang_en;; *);;
+
+SPICE <- metric_with_graph_comparison;;
+SPICE <- metric_with_use_of_surprisal;;
+
+
+WMD
+=> nrel_main_idtf:
+	[WMD]
+	(* <- lang_en;; *);;
+
+metric_using_earth_mover_s_distance
+=> nrel_main_idtf:
+	[metric using earth mover’s distance]
+	(* <- lang_en;; *);;
+
+WMD<-metric_using_earth_mover_s_distance;;
+
+
+BLEU
+=> nrel_main_idtf:
+	[BLEU]
+	(* <- lang_en;; *);;
+
+BLEU_1
+=> nrel_main_idtf:
+	[BLEU-1]
+	(* <- lang_en;; *);;
+
+
+BLEU_2
+=> nrel_main_idtf:
+	[BLEU-2]
+	(* <- lang_en;; *);;
+
+BLEU_3
+=> nrel_main_idtf:
+	[BLEU-3]
+	(* <- lang_en;; *);;
+
+BLEU_4
+=> nrel_main_idtf:
+	[BLEU-4]
+	(* <- lang_en;; *);;
+
+metric_for_comparison_of_sentence_with_several_references
+=> nrel_main_idtf:
+	[metric for comparison of sentence with several references]
+	(* <- lang_en;; *);;
+
+metric_with_penalties_or_awards
+=> nrel_main_idtf:
+	[metric with penalties or awards]
+	(* <- lang_en;; *);;
+
+BLEU_1<=nrel_inclusion:BLEU;;
+BLEU_2<=nrel_inclusion:BLEU;;
+BLEU_3<=nrel_inclusion:BLEU;;
+BLEU_4<=nrel_inclusion:BLEU;;
+
+BLEU<-metric_for_comparison_of_sentence_with_several_references;;
+BLEU<-metric_with_penalties_or_awards;;
+
+METEOR
+=> nrel_main_idtf:
+	[METEOR]
+	(* <- lang_en;; *);;
+
+English_language_metric
+=> nrel_main_idtf:
+	[English language metric]
+	(* <- lang_en;; *);;
+
+metric_with_fixed_words_sequence
+=> nrel_main_idtf:
+	[metric with fixed words sequence]
+	(* <- lang_en;; *);;
+
+METEOR<-English_language_metric;;
+METEOR<-metric_with_fixed_words_sequence;;
+
+CIDEr
+=> nrel_main_idtf:
+	[CIDEr]
+	(* <- lang_en;; *);;
+
+metric_with_semantic_comparison
+=> nrel_main_idtf:
+	[metric with semantic comparison]
+	(* <- lang_en;; *);;
+
+CIDEr<-metric_for_comparison_of_sentence_with_several_references;;
+CIDEr<-metric_with_semantic_comparison;;
+CIDEr<-metric_using_summaries_structuring_for_comparison;;
+
+*];;
+
+
+
+
