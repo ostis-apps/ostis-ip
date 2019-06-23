@@ -1,10 +1,10 @@
 section_Subject_domain_of_image_captioning_evaluation_metrics
 => nrel_main_idtf:
-	[section_Subject_domain_of_image_captioning_evaluation_metrics]
+	[Section. Subject domain of image captioning evaluation metrics]
 	(* <- lang_en;; *);;
 section_Subject_domain_of_image_captioning_evaluation_metrics
 => nrel_main_idtf:
-	[Раздел.Предметная область показателей оценки субтитров изображения]
+	[Раздел.Предметная область метрик оценки качества аннотирования изображений]
 	(* <- lang_ru;; *);;
 
 
@@ -257,7 +257,7 @@ metric_with_use_of_surprisal
 	[metric with use of surprisal]
 	(* <- lang_en;; *);;
 
-SPICE -> metric_with_graph_comparison ; metric_with_use_of_surprisal;;
+SPICE <- metric_with_graph_comparison ; metric_with_use_of_surprisal;;
 
 WMD
 => nrel_main_idtf:
@@ -305,7 +305,7 @@ metric_with_penalties_or_awards
 	(* <- lang_en;; *);;
 
 BLEU=>nrel_inclusion:BLEU_1;BLEU_2;BLEU_3;BLEU_4;;
-BLEU->metric_for_comparison_of_sentence_with_several_references;metric_with_penalties_or_awards;;
+BLEU<-metric_for_comparison_of_sentence_with_several_references;metric_with_penalties_or_awards;;
 
 METEOR
 => nrel_main_idtf:
@@ -322,7 +322,7 @@ metric_with_fixed_words_sequence
 	[metric with fixed words sequence]
 	(* <- lang_en;; *);;
 
-METEOR->English_language_metric;metric_with_fixed_words_sequence;;
+METEOR<-English_language_metric;metric_with_fixed_words_sequence;;
 
 CIDEr
 => nrel_main_idtf:
@@ -334,7 +334,7 @@ metric_with_semantic_comparison
 	[metric with semantic comparison]
 	(* <- lang_en;; *);;
 
-CIDEr->metric_for_comparison_of_sentence_with_several_references;metric_with_semantic_comparison;metric_using_summaries_structuring_for_comparison;;
+CIDEr<-metric_for_comparison_of_sentence_with_several_references;metric_with_semantic_comparison;metric_using_summaries_structuring_for_comparison;;
 *];;
 
 
