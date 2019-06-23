@@ -1,3 +1,13 @@
+section_Subject_domain_of_image_captioning_evaluation_metrics
+=> nrel_main_idtf:
+	[Section. Subject domain of image captioning evaluation metrics]
+	(* <- lang_en;; *);;
+section_Subject_domain_of_image_captioning_evaluation_metrics
+=> nrel_main_idtf:
+	[Раздел.Предметная область метрик оценки качества аннотирования изображений]
+	(* <- lang_ru;; *);;
+
+
 section_Subject_domain_of_image_captioning_evaluation_metrics=[*
 
 Subject_domain_of_image_captioning_evaluation_metrics
@@ -76,7 +86,6 @@ metric_considering_synonyms
 
 image_captioning_evaluation_metric <= nrel_subdividing : { metric_considering_original_words ; metric_considering_wordforms; metric_considering_synonyms };;
 
-
 metric_for_whole_summaries_comparison
 => nrel_main_idtf:
 	[metric for whole summaries comparison]
@@ -133,13 +142,9 @@ agglutinative_languages_metric
 	[agglutinative languages metric]
 	(* <- lang_en;; *);;
 
-fusional_languages_metric <=nrel_inclusion: language_dependent_metric;;
-English_language_metric <=nrel_inclusion: fusional_languages_metric ;;
-Russian_language_metric <=nrel_inclusion: fusional_languages_metric ;;
-isolating_languages_metric <=nrel_inclusion: language_dependent_metric;;
 Chinese_language_metric <=nrel_inclusion: isolating_languages_metric  ;;
-agglutinative_languages_metric <=nrel_inclusion: language_dependent_metric;;
-
+fusional_languages_metric=>nrel_inclusion:English_language_metric;Russian_language_metric;;
+language_dependent_metric=>nrel_inclusion:fusional_languages_metric;agglutinative_languages_metric;isolating_languages_metric;;
 
 metric_with_gaming
 => nrel_main_idtf:
@@ -235,9 +240,7 @@ bigram
 	[bigram]
 	(* <- lang_en;; *);;
 
-unigram <=nrel_inclusion: n_gram;;
-bigram <=nrel_inclusion: n_gram;;
-
+n_gram => nrel_inclusion: bigram ; unigram;;
 
 SPICE
 => nrel_main_idtf:
@@ -254,9 +257,7 @@ metric_with_use_of_surprisal
 	[metric with use of surprisal]
 	(* <- lang_en;; *);;
 
-SPICE <- metric_with_graph_comparison;;
-SPICE <- metric_with_use_of_surprisal;;
-
+SPICE <- metric_with_graph_comparison ; metric_with_use_of_surprisal;;
 
 WMD
 => nrel_main_idtf:
@@ -270,7 +271,6 @@ metric_using_earth_mover_s_distance
 
 WMD<-metric_using_earth_mover_s_distance;;
 
-
 BLEU
 => nrel_main_idtf:
 	[BLEU]
@@ -281,17 +281,14 @@ BLEU_1
 	[BLEU-1]
 	(* <- lang_en;; *);;
 
-
 BLEU_2
 => nrel_main_idtf:
 	[BLEU-2]
 	(* <- lang_en;; *);;
-
 BLEU_3
 => nrel_main_idtf:
 	[BLEU-3]
 	(* <- lang_en;; *);;
-
 BLEU_4
 => nrel_main_idtf:
 	[BLEU-4]
@@ -307,13 +304,8 @@ metric_with_penalties_or_awards
 	[metric with penalties or awards]
 	(* <- lang_en;; *);;
 
-BLEU_1<=nrel_inclusion:BLEU;;
-BLEU_2<=nrel_inclusion:BLEU;;
-BLEU_3<=nrel_inclusion:BLEU;;
-BLEU_4<=nrel_inclusion:BLEU;;
-
-BLEU<-metric_for_comparison_of_sentence_with_several_references;;
-BLEU<-metric_with_penalties_or_awards;;
+BLEU=>nrel_inclusion:BLEU_1;BLEU_2;BLEU_3;BLEU_4;;
+BLEU<-metric_for_comparison_of_sentence_with_several_references;metric_with_penalties_or_awards;;
 
 METEOR
 => nrel_main_idtf:
@@ -330,8 +322,7 @@ metric_with_fixed_words_sequence
 	[metric with fixed words sequence]
 	(* <- lang_en;; *);;
 
-METEOR<-English_language_metric;;
-METEOR<-metric_with_fixed_words_sequence;;
+METEOR<-English_language_metric;metric_with_fixed_words_sequence;;
 
 CIDEr
 => nrel_main_idtf:
@@ -343,11 +334,9 @@ metric_with_semantic_comparison
 	[metric with semantic comparison]
 	(* <- lang_en;; *);;
 
-CIDEr<-metric_for_comparison_of_sentence_with_several_references;;
-CIDEr<-metric_with_semantic_comparison;;
-CIDEr<-metric_using_summaries_structuring_for_comparison;;
-
+CIDEr<-metric_for_comparison_of_sentence_with_several_references;metric_with_semantic_comparison;metric_using_summaries_structuring_for_comparison;;
 *];;
+
 
 
 
