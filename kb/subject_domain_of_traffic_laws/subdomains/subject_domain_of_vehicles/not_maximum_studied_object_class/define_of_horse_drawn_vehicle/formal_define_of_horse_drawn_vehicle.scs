@@ -1,0 +1,35 @@
+concept_horse_drawn_vehicle
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [horse-drawn vehicle](* <- lang_en;; *);
+        [гужевое транспортное средство](* <- lang_ru;; *);;
+
+definition_of_horse_drawn_vehicle
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (гужевое транспортное средство)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_horse_drawn_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_horse_drawn_vehicle.html"(* <- lang_ru;; *);;*);;
+
+statement_horse_drawn_vehicle_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О гужевом транспорте](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_horse_drawn_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://horse_drawn_vehicle_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_horse_drawn_vehicle_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О гужевом транспорте](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_horse_drawn_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://horse_drawn_vehicle_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_horse_drawn_vehicle;;
+	<= nrel_sc_text_translation: ...(*->"file://horse_drawn_vehicle_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(гужевое транспортное средство)](*<- lang_ru;;*);;
+*);;

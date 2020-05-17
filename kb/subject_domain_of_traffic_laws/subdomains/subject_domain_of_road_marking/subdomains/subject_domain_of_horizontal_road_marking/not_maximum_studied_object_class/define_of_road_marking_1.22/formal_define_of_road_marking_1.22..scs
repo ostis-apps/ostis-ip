@@ -1,0 +1,20 @@
+concept_road_marking_1.22
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [road marking 1.22](* <- lang_en;; *);
+        [дорожная разметка 1.22](* <- lang_ru;; *);;
+
+definition_of_road_marking_1.22
+    <- definition;
+    => nrel_main_idtf:
+        [Определение (дорожная разметка 1.22)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_road_marking_1.22;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_road_marking_1.22..html"(* <- lang_ru;; *);;*);;
+		
+illustration_of_road_marking_1.22 -> ...
+(*
+	->rrel_key_sc_element: concept_road_marking_1.22;;
+	<= nrel_sc_text_translation: ...(*->"file://road_marking_1.22._img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(дорожная разметка 1.22)](*<- lang_ru;;*);;
+*);;

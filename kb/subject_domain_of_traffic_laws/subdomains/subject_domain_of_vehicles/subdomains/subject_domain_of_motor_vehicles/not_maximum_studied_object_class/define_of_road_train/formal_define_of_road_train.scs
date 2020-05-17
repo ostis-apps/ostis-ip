@@ -1,0 +1,35 @@
+concept_road_train
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [road train](* <- lang_en;; *);
+        [автопоезд](* <- lang_ru;; *);;
+
+definition_of_road_train
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (автопоезд)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_road_train;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_road_train.html"(* <- lang_ru;; *);;*);;
+
+statement_road_train_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 Об автопоезде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_road_train;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://road_train_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_road_train_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 Об автопоезде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_road_train;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://road_train_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_road_train;;
+	<= nrel_sc_text_translation: ...(*->"file://road_train_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(автопоезд)](*<- lang_ru;;*);;
+*);;

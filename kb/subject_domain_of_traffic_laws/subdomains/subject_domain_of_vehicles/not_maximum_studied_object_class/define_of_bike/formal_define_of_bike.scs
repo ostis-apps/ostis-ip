@@ -1,0 +1,35 @@
+concept_bike
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [bike](* <- lang_en;; *);
+        [велосипед](* <- lang_ru;; *);;
+
+definition_of_bike
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (велосипед)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_bike;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_bike.html"(* <- lang_ru;; *);;*);;
+
+statement_bike_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О велосипеде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_bike;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://bike_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_bike_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О велосипеде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_bike;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://bike_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_bike;;
+	<= nrel_sc_text_translation: ...(*->"file://bike_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(велосипед)](*<- lang_ru;;*);;
+*);;
