@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/group" idtf="concept_road_marking_1.12" shapeColor="193" id="18905440" parent="18290872" left="0" top="0" right="224" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="265.959" y="415.352" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="" shapeColor="0" id="18906656" parent="18290872" x="265.959" y="492.379" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_designation_of_approaching" shapeColor="0" id="18904376" parent="18290872" left="0" top="0" right="264" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="320.054" y="547.825" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="_road_marking_1.21." shapeColor="0" id="18905136" parent="18290872" left="0" top="0" right="168" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="264.648" y="592.42" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18702344" parent="18290872" id_b="18905440" id_e="18906656" b_x="265.959" b_y="415.352" e_x="265.959" e_y="492.379" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18698816" parent="18290872" id_b="18904376" id_e="18699152" b_x="320.054" b_y="547.825" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.43345">
+            <points/>
+        </arc>
+        <pair type="pair/var/orient" idtf="" shapeColor="0" id="18699152" parent="18290872" id_b="18905136" id_e="18906656" b_x="264.648" b_y="592.42" e_x="265.959" e_y="492.379" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <contour type="" idtf="" shapeColor="0" id="18290872" parent="0">
+            <points>
+                <point x="156.5" y="395.082"/>
+                <point x="156.5" y="654.542"/>
+                <point x="613.256" y="653.19"/>
+                <point x="603.797" y="392.379"/>
+            </points>
+        </contour>
+        <node type="node/const/group" idtf="concept_road_marking_1.21" shapeColor="0" id="18904984" parent="18290632" left="0" top="0" right="224" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="192.162" y="306.437" haveBus="false" idtf_pos="3">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/var/general_node" idtf="_road_marking_1.21." shapeColor="0" id="18904528" parent="18290632" left="0" top="0" right="168" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="566.834" y="303.16" haveBus="false" idtf_pos="1">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/var/pos" idtf="" shapeColor="0" id="18701168" parent="18290632" id_b="18904984" id_e="18904528" b_x="192.162" b_y="306.437" e_x="566.834" e_y="303.16" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <contour type="" idtf="" shapeColor="0" id="18290632" parent="0">
+            <points>
+                <point x="175.071" y="271.437"/>
+                <point x="175.071" y="331.437"/>
+                <point x="627.071" y="329.437"/>
+                <point x="625.071" y="274.437"/>
+            </points>
+        </contour>
+        <node type="node/const/group" idtf="atomic_logical_formula" shapeColor="0" id="18903768" parent="0" left="0" top="0" right="185" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="686.751" y="303.17" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/attribute" idtf="rrel_main_key_sc_element" shapeColor="0" id="18905896" parent="0" left="0" top="0" right="213" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="221.751" y="96.67" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/asymmetry" idtf="" shapeColor="0" id="18904832" parent="0" x="56.7502" y="158.079" haveBus="true" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/group" idtf="logical_formula_and_uniqueness" shapeColor="0" id="18904680" parent="0" left="0" top="0" right="260" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="686.27" y="524.852" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="define_of_road_marking_1.21" shapeColor="0" id="18905592" parent="0" left="0" top="0" right="233" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="281.751" y="156.671" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_equivalence" shapeColor="0" id="18903008" parent="0" left="0" top="0" right="138" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="55.3992" y="90.5" haveBus="false" idtf_pos="3">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18700664" parent="0" id_b="98990992" id_e="18290632" b_x="0" b_y="0" e_x="401.071" e_y="301.437" dotBBalance="0.247692" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18702176" parent="0" id_b="18903008" id_e="18904832" b_x="55.3992" b_y="90.5" e_x="56.7502" e_y="158.079" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18699656" parent="0" id_b="18903768" id_e="18290632" b_x="686.751" b_y="303.17" e_x="401.071" e_y="301.437" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18701336" parent="0" id_b="18905592" id_e="18904832" b_x="281.751" b_y="156.671" e_x="56.7502" e_y="158.079" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18698984" parent="0" id_b="18905896" id_e="18701336" b_x="221.751" b_y="96.67" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.245146">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18702008" parent="0" id_b="98990992" id_e="18290872" b_x="0" b_y="0" e_x="384.878" e_y="523.461" dotBBalance="0.648388" dotEBalance="0">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="18701840" parent="0" id_b="18904680" id_e="18290872" b_x="686.27" b_y="524.852" e_x="384.878" e_y="523.461" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </arc>
+        <bus type="" idtf="" shapeColor="0" id="98990992" parent="0" owner="18904832" b_x="56.7502" b_y="167.579" e_x="56.7502" e_y="728.078">
+            <points/>
+        </bus>
+    </staticSector>
+</GWF>

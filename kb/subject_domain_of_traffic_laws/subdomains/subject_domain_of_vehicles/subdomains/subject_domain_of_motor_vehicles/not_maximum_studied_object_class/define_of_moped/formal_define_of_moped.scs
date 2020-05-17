@@ -1,0 +1,35 @@
+concept_moped
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [moped](* <- lang_en;; *);
+        [мопед](* <- lang_ru;; *);;
+
+definition_of_moped
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (мопед)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_moped;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_moped.html"(* <- lang_ru;; *);;*);;
+
+statement_moped_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О мопеде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_moped;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://moped_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_moped_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О мопеде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_moped;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://moped_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_moped;;
+	<= nrel_sc_text_translation: ...(*->"file://moped_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(мопед)](*<- lang_ru;;*);;
+*);;

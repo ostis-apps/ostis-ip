@@ -1,0 +1,47 @@
+concept_motor_vehicle
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [motor vehicle](* <- lang_en;; *);
+        [механическое транспортное средство](* <- lang_ru;; *);;
+
+definition_of_motor_vehicle
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (механическое транспортное средство)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_motor_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_motor_vehicle.html"(* <- lang_ru;; *);;*);;
+
+statement_motor_vehicle_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О механическом транспортном средстве](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_motor_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://motor_vehicle_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_motor_vehicle_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О механическом транспортном средстве](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_motor_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://motor_vehicle_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_motor_vehicle;;
+	<= nrel_sc_text_translation: ...(*->"file://motor_vehicle_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(механическое транспортное средство)](*<- lang_ru;;*);;
+*);;
+
+concept_motor_vehicle => nrel_inclusion: concept_wheeled_tractor;;
+concept_motor_vehicle => nrel_inclusion: concept_car;;
+concept_motor_vehicle => nrel_inclusion: concept_route_vehicle;;
+concept_motor_vehicle => nrel_inclusion: concept_bus;;
+concept_motor_vehicle => nrel_inclusion: concept_motorcycle;;
+concept_motor_vehicle => nrel_inclusion: concept_moped;;
+concept_motor_vehicle => nrel_inclusion: concept_slow_moving_vehicle;;
+concept_motor_vehicle => nrel_inclusion: concept_tram;;
+concept_motor_vehicle => nrel_inclusion: concept_trolley_bus;;
+concept_motor_vehicle => nrel_inclusion: concept_quadricycle;;
+concept_motor_vehicle => nrel_inclusion: concept_road_train;;

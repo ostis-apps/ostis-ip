@@ -1,0 +1,35 @@
+concept_wheeled_tractor
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [wheeled tractor](* <- lang_en;; *);
+        [колесный трактор](* <- lang_ru;; *);;
+
+definition_of_wheeled_tractor
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (колесный трактор)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_wheeled_tractor;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_wheeled_tractor.html"(* <- lang_ru;; *);;*);;
+
+statement_wheeled_tractor_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О колесном тракторе](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_wheeled_tractor;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://wheeled_tractor_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_wheeled_tractor_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О колесном тракторе](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_wheeled_tractor;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://wheeled_tractor_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_wheeled_tractor;;
+	<= nrel_sc_text_translation: ...(*->"file://wheeled_tractor_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(колесный трактор)](*<- lang_ru;;*);;
+*);;

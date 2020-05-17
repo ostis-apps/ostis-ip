@@ -1,0 +1,35 @@
+concept_train
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [train](* <- lang_en;; *);
+        [поезд](* <- lang_ru;; *);;
+
+definition_of_train
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (поезд)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_train;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_train.html"(* <- lang_ru;; *);;*);;
+
+statement_train_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О поезде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_train;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://train_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_train_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О поезде](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_train;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://train_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_train;;
+	<= nrel_sc_text_translation: ...(*->"file://train_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(поезд)](*<- lang_ru;;*);;
+*);;

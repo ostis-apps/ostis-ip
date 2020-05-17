@@ -1,0 +1,13 @@
+subject_domain_of_traffic_laws
+	=> nrel_main_idtf:[Предметная область правил дорожного движения](* <- lang_ru;; *);
+	=> nrel_main_idtf:[Subject domain of traffic laws](* <- lang_en;; *);
+<- subject_domain;
+
+-> rrel_maximum_studied_object_class: concept_traffic_law;
+
+-> rrel_not_maximum_studied_object_class:
+		concept_vehicle;
+		concept_road_sign;
+		concept_road_marking;;
+
+

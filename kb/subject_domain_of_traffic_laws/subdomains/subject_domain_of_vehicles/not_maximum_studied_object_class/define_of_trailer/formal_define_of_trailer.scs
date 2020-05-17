@@ -1,0 +1,35 @@
+concept_trailer
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [trailer](* <- lang_en;; *);
+        [прицеп](* <- lang_ru;; *);;
+
+definition_of_trailer
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (прицеп)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_trailer;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_trailer.html"(* <- lang_ru;; *);;*);;
+
+statement_trailer_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О прицепе](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_trailer;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://trailer_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_trailer_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О прицепе](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_trailer;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://trailer_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_trailer;;
+	<= nrel_sc_text_translation: ...(*->"file://trailer_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(прицеп)](*<- lang_ru;;*);;
+*);;

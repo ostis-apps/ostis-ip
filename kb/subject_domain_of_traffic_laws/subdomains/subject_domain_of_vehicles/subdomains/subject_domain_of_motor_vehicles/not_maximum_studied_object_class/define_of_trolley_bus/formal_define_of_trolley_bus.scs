@@ -1,0 +1,35 @@
+concept_trolley_bus
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [trolley bus](* <- lang_en;; *);
+        [троллейбус](* <- lang_ru;; *);;
+
+definition_of_trolley_bus
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (троллейбус)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_trolley_bus;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_trolley_bus.html"(* <- lang_ru;; *);;*);;
+
+statement_trolley_bus_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О троллейбусе](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_trolley_bus;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://trolley_bus_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_trolley_bus_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О троллейбусе](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_trolley_bus;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://trolley_bus_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_trolley_bus;;
+	<= nrel_sc_text_translation: ...(*->"file://trolley_bus_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(троллейбус)](*<- lang_ru;;*);;
+*);;

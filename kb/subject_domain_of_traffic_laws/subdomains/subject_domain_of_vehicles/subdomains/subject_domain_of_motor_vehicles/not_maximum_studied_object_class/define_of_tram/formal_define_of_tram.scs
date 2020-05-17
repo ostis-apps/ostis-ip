@@ -1,0 +1,35 @@
+concept_tram
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [tram](* <- lang_en;; *);
+        [трамвай](* <- lang_ru;; *);;
+
+definition_of_tram
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (трамвай)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_tram;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_tram.html"(* <- lang_ru;; *);;*);;
+
+statement_tram_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О трамвае](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_tram;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://tram_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_tram_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О трамвае](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_tram;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://tram_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_tram;;
+	<= nrel_sc_text_translation: ...(*->"file://tram_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(трамвай)](*<- lang_ru;;*);;
+*);;

@@ -1,0 +1,35 @@
+concept_route_vehicle
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [route vehicle](* <- lang_en;; *);
+        [маршрутное транспортное средство](* <- lang_ru;; *);;
+
+definition_of_route_vehicle
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (маршрутное транспортное средство)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_route_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_route_vehicle.html"(* <- lang_ru;; *);;*);;
+
+statement_route_vehicle_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 О маршрутном транспортном средстве](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_route_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://route_vehicle_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_route_vehicle_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 О маршрутном транспортном средстве](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_route_vehicle;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://route_vehicle_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_route_vehicle;;
+	<= nrel_sc_text_translation: ...(*->"file://route_vehicle_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(маршрутное транспортное средство)](*<- lang_ru;;*);;
+*);;

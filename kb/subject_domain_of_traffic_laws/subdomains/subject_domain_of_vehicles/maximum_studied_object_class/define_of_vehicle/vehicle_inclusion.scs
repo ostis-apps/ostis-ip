@@ -1,0 +1,6 @@
+concept_vehicle => nrel_inclusion: concept_motor_vehicle;;
+concept_vehicle => nrel_inclusion: concept_horse_drawn_vehicle;;
+concept_vehicle => nrel_inclusion: concept_self_propelled_vehicle;;
+concept_vehicle => nrel_inclusion: concept_trailer;;
+concept_vehicle => nrel_inclusion: concept_railway_vehicle;;
+concept_vehicle => nrel_inclusion: concept_bike;;

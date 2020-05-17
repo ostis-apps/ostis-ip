@@ -1,0 +1,56 @@
+concept_car
+    <- sc_node_not_relation;
+    => nrel_main_idtf:
+        [car](* <- lang_en;; *);
+        [автомобиль](* <- lang_ru;; *);;
+
+definition_of_car
+    <- definition;
+    => nrel_main_idtf: 
+        [Определение (автомобиль)](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_car;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://html_define_of_car.html"(* <- lang_ru;; *);;*);;
+
+statement_car_1
+    <- statement;
+    => nrel_main_idtf: [Утв. 1 Об автомобиле](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_car;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://car_stat_1.html"(* <- lang_ru;; *);;*);;
+
+statement_car_2
+    <- statement;
+    => nrel_main_idtf: [Утв. 2 Об автомобиле](* <- lang_ru;; *);
+    -> rrel_key_sc_element: concept_car;
+    <= nrel_sc_text_translation: 
+        ...(* -> rrel_example: "file://car_stat_2.html"(* <- lang_ru;; *);;*);;
+
+
+illustration -> ...
+(*
+	->rrel_key_sc_element: concept_car;;
+	<= nrel_sc_text_translation: ...(*->"file://car_img.png";;*);;
+	=> nrel_main_idtf: [Рисунок(автомобиль)](*<- lang_ru;;*);;
+*);;
+
+concept_car <= nrel_subdividing:...
+	(*	
+		=> nrel_main_idtf:[Разбиение по типу кузова](* <- lang_ru;; *);;
+		-> concept_sedan;;
+		-> concept_coupe;;
+		-> concept_CUV;;
+		-> concept_hatchback;;
+		-> concept_liftback;;
+		-> concept_limousine;;
+		-> concept_minivan;;
+		-> concept_pickup;;
+		-> concept_roadster;;
+		-> concept_station_wagon;;
+		-> concept_targa;;
+		-> concept_cabriolet;;
+		-> concept_stretch;;
+		-> concept_SUV;;
+		-> concept_phaeton;;
+		-> concept_van;;
+	*);;
